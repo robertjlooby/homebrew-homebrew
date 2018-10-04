@@ -1,10 +1,11 @@
 class ChewiePics < Formula
   desc "Pictures of my dog, Chewie"
   homepage "https://github.com/robertjlooby/chewie-pics"
-  url "https://github.com/robertjlooby/chewie-pics/archive/v1.1.0.tar.gz"
-  sha256 "8f20ae298f3d3fc66fe094ab5d2d7786e8b5088bb667e18cd26a01421e8279bd"
+  url "https://github.com/robertjlooby/chewie-pics/archive/v1.1.1.tar.gz"
+  sha256 "29b48279b46f1f6caad3c425bf09747a684e2694d7d9f37277b556dec18bce1c"
 
   def install
+    inreplace "chewie", "CHEWIE_HOME='.'", "CHEWIE_HOME=#{libexec}"
     libexec.install Dir["*"]
     bin.write_exec_script (libexec/"chewie")
   end
