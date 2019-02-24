@@ -8,6 +8,11 @@ class DhallToSshConfig < Formula
     url "https://github.com/robertjlooby/dhall-ssh-config.git"
   end
 
+  bottle do
+    root_url "https://github.com/robertjlooby/dhall-ssh-config/releases/download/0.1.0.0"
+    sha256 "f51d6448a0a6580377c3dd06a6c04b30b9a8d31d2ebeb6fbae7f67467beff443" => :mojave
+  end
+
   depends_on "haskell-stack" => :build
 
   def install
