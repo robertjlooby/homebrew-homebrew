@@ -1,16 +1,11 @@
 class DhallToSshConfig < Formula
   desc "Tool for generating an ssh config from Dhall"
   homepage "https://github.com/robertjlooby/dhall-ssh-config"
-  url "https://github.com/robertjlooby/dhall-ssh-config/archive/0.2.0.0.tar.gz"
-  sha256 "c2e6297f8c229df0326a635205b65ca1082a8e3d881870c2b4c0ae5c3d154cdb"
+  url "https://github.com/robertjlooby/dhall-ssh-config/archive/1.0.0.0.tar.gz"
+  sha256 "55d4ff2cfc10d8fbefba764f70492e85a9b63a21d7a7d398f3620e087912fab4"
 
   head do
     url "https://github.com/robertjlooby/dhall-ssh-config.git"
-  end
-
-  bottle do
-    root_url "https://github.com/robertjlooby/dhall-ssh-config/releases/download/0.2.0.0"
-    sha256 "57d993a129f370bb8e7c8c2836c75d3ba497b6c9ec5128ea73b30692dadcd7d2" => :mojave
   end
 
   depends_on "haskell-stack" => :build

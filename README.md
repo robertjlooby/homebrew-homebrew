@@ -7,5 +7,6 @@
 
 ### Creating bottles
 
+    brew uninstall <name>
     brew install --build-bottle <name>
     brew bottle <name>
