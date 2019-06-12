@@ -18,6 +18,7 @@ class DhallToSshConfig < Formula
 
   def install
     opoo "Building from source. This could take a while..."
+    system "stack", "setup"
     system "stack", "install", "dhall-ssh-config", "--local-bin-path", bin
   end
 
