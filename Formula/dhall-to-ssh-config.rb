@@ -17,6 +17,7 @@ class DhallToSshConfig < Formula
   depends_on "haskell-stack" => :build
 
   def install
+    opoo "Building from source. This could take a while..."
     system "stack", "install", "dhall-ssh-config", "--local-bin-path", bin
   end
 
