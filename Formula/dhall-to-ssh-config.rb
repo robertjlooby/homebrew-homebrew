@@ -9,6 +9,7 @@ class DhallToSshConfig < Formula
   end
 
   bottle do
+    cellar :any_skip_relocation
     root_url "https://github.com/robertjlooby/dhall-ssh-config/releases/download/1.0.0.0"
     sha256 "39516e0d5557057215b561c900b61685863d551f15a2d44f4f35e89d8d9be902" => :mojave
   end
