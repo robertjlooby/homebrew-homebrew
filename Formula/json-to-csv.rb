@@ -1,8 +1,8 @@
 class JsonToCsv < Formula
   desc "A tool for converting JSON values to comma-separated values (CSVs)"
   homepage "https://github.com/robertjlooby/json-to-csv"
-  url "https://github.com/robertjlooby/json-to-csv/archive/1.1.0.0.tar.gz"
-  sha256 "5ef9a9ec9fee994f9e516b0d8829fa60e322250587a689a666c9b2c385a852d7"
+  url "https://github.com/robertjlooby/json-to-csv/archive/1.2.0.0.tar.gz"
+  sha256 "492bab2f5d5b82e643a2f421b351730a95e8cac01f59373a2deaa6a3c110f0e9"
 
   head do
     url "https://github.com/robertjlooby/json-to-csv.git"
@@ -10,8 +10,8 @@ class JsonToCsv < Formula
 
   bottle do
     cellar :any_skip_relocation
-    root_url "https://github.com/robertjlooby/json-to-csv/releases/download/1.1.0.0"
-    sha256 "8030f1eb9f89118089e8ef7109ac9b6afbcbabb261a1454c6ca86ddf0e41392c" => :mojave
+    root_url "https://github.com/robertjlooby/json-to-csv/releases/download/1.2.0.0"
+    sha256 "c751019d2720efae20e85f6418f00f91a5db886593c5867c6e1953d18c1cd983" => :mojave
   end
 
   depends_on "haskell-stack" => :build
